@@ -1,0 +1,20 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: #141414 url("../img/tinyBg.jpg") center/cover no-repeat;
+}
+
+.light {
+  width: 100%;
+  height: 100%;
+  background: none;
+}
+
+.light._on{
+	background: radial-gradient(circle at var(--move-x) var(--move-y), transparent 160px, rgb(0,0,0,0.95) 200px);
+}
