@@ -1,0 +1,25 @@
+* {
+  /* margin: 0; */
+  /* padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  background: #f7f7f7;
+  font-family: "Roboto", sans-serif;
+}
+
+li:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+p {
+  font-style: italic;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
