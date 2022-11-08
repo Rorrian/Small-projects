@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+	<title>Animations</title>
+
+	<link rel="stylesheet" href="css/main.css">
+	<!-- ! Подключение стилей анимаций -->
+	<link rel="stylesheet" href="css/animations.css">
+
+	<script src="js/app.js" defer></script>
+	</style>
+</head>
+
+<body>
+<div class="animations">
+	<h1 class="animations__title">Animations</h1>
+	<p class="animations__method">
+		1. Необходимо подключить в проект файл: "js/libs/anim.js" <br>
+		2. Назначить блокам атрибуты data-anim="" с нужной анимацией(при необходимости блокам также можно добавить атрибуты "data-delay='.5'" для задержки анимации)<br>
+		3. Добавить в файл стилей @keyframes с требуемыми анимациями
+	</p>
+	<ul class="animations__list">
+
+		<li class="animations__item item-animation opacity">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Opacity</h2>
+				<h3 class="item-animation__subtitle">data-anim="opacity"</h3>
+				<p class="item-animation__description">
+					<span>opacity</span><br>
+					Плавное изменения непрозрачности элемента
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="opacity">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation fade-down">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Fade down</h2>
+				<h3 class="item-animation__subtitle">data-anim="fade-down"</h3>
+				<p class="item-animation__description">
+					<span>translate снизу вверх</span><br>
+					Плавное появление(выезд) элемента снизу вверх <br>
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="fade-down">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation fade-down-half">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Fade down half</h2>
+				<h3 class="item-animation__subtitle">data-anim="fade-down-l(L)"</h3>
+				<p class="item-animation__description">
+				Медленное плавное появление(выезд) элемента снизу вверх
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="fade-down-l">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation fade-down-super">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Fade down super</h2>
+				<h3 class="item-animation__subtitle">data-anim="fade-down-s"</h3>
+				<p class="item-animation__description">
+				Быстрое плавное появление(выезд) элемента снизу вверх
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="fade-down-s">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation fade-down-3-elem-with-delay">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Fade down 3х</h2>
+				<h3 class="item-animation__subtitle">data-anim="fade-down" data-delay="0/.1/.2"</h3>
+				<p class="item-animation__description">
+					Плавное последовательное появление(выезд) элементов снизу с задержкой: у 1 задержки нет, у второго 0.1s, у второго 0.2s
+				</p>
+			</div>
+			<div class="item-animation__showing">
+				<p data-anim="fade-down" data-delay="0">
+					Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+				<p data-anim="fade-down" data-delay=".1">Veniam ab at, reiciendis accusamus odit aperiam laudantium.</p>
+				<p data-anim="fade-down" data-delay=".2"> Sit laborum repellendus facilis quod consequatur.</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation fade-left-right">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Fade left/right</h2>
+				<h3 class="item-animation__subtitle">data-anim="fade-left/right"</h3>
+				<p class="item-animation__description">
+					<span>translate слева/справа</span><br>
+					Плавное появление(выезд) элемента слева/справа
+				</p>
+			</div>
+			<div class="item-animation__showing">
+				<p data-anim="fade-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur.</p>
+				<p data-anim="fade-right">Quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation magnification">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Magnification</h2>
+				<h3 class="item-animation__subtitle">data-anim="magnification"</h3>
+				<p class="item-animation__description">
+					<span>color, scale, opacity</span><br>
+					Изначально для блока указан большой размер(scale), постепенно размер уменьшается до исходного  с изменением цвета текста
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="magnification">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur.</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation rotate-left-right">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Rotate left/right</h2>
+				<h3 class="item-animation__subtitle">data-anim="rotate-left/right"</h3>
+				<p class="item-animation__description">
+					<span>rotate</span><br>
+					Прокрутка элемента против/по часовой стрелки/е
+				</p>
+			</div>
+			<div class="item-animation__showing">
+				<p data-anim="rotate-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur.</p>
+				<p data-anim="rotate-right">Quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation space-left-right">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Space left/right</h2>
+				<h3 class="item-animation__subtitle">data-anim="space-left/right"</h3>
+				<p class="item-animation__description">
+					<span>scale и translate</span><br>
+					Плавное появление(выезд) элемента слева/справа с увеличением до исходного размера
+				</p>
+			</div>
+			<div class="item-animation__showing">
+				<p data-anim="space-left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur.</p>
+				<p data-anim="space-right">Quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation spacing-in">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Spacing in</h2>
+				<h3 class="item-animation__subtitle">data-anim="spacing-in"</h3>
+				<p class="item-animation__description">
+					<span>opacity и letter-spacing</span><br>
+					Плавное изменение межбуквенного расстояния с большого до исходного размера с увеличением непрозрачности текста
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="spacing-in" style="max-height: 227px;overflow: hidden;">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation text-focus-in">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Text focus in</h2>
+				<h3 class="item-animation__subtitle">data-anim="text-focus-in"</h3>
+				<p class="item-animation__description">
+					<span>opacity и blur</span><br>
+					Плавное повышение четкости отображения элемента с непрозрачностью
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="text-focus-in">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation vanish-in">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Vanish in</h2>
+				<h3 class="item-animation__subtitle">data-anim="vanish-in"</h3>
+				<p class="item-animation__description">
+					<span>scale и blur</span><br>
+					Плавное появление элемента с изменением четкости отображения элемента
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="vanish-in">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+		<li class="animations__item item-animation tin-down-left">
+			<div class="item-animation__body">
+				<h2 class="item-animation__title">Tin down left</h2>
+				<h3 class="item-animation__subtitle">data-anim="tin-down-left"</h3>
+				<p class="item-animation__description">
+					<span>scale и translate слева вправо</span><br>
+					Плавное появление(выезд) элемента слева с пульсообразным изменением размера
+					элемента
+				</p>
+			</div>
+			<div class="item-animation__showing" data-anim="tin-down-left">
+				<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit
+					laborum repellendus facilis quod consequatur, quibusdam voluptatibus
+					inventore corrupti, ad tempore ex tenetur aspernatur dignissimos rerum
+					odit non voluptatum necessitatibus quaerat?</p>
+			</div>
+		</li>
+	</ul>
+</div>
+	
+<!-- ! Подключение anim.js -->
+<script src="js/libs/anim.js"></script>
+</body>
+
+</html>
