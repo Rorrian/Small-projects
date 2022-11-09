@@ -17,14 +17,12 @@ body {
   font-style: normal;
   font-weight: 400;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("./fonts/Poppins-Medium.ttf");
   font-style: normal;
   font-weight: 500;
 }
-
 @font-face {
   font-family: "Poppins";
   src: url("./fonts/Poppins-SemiBold.ttf");
@@ -45,7 +43,6 @@ body {
 
   margin-bottom: 30px;
 }
-
 .animations__method {
   margin-bottom: 20px;
 }
@@ -56,6 +53,7 @@ body {
 }
 .animations__item {
 }
+/*==============================*/
 
 .item-animation {
   display: flex;
@@ -91,9 +89,86 @@ body {
   justify-content: center;
   align-items: flex-start;
   column-gap: 5px;
+  flex: 1 1 auto;
 
   padding: 30px;
   background-color: rgba(255, 255, 255, 0.6);
   border-radius: 20px;
   max-width: 50%;
 }
+/*==============================*/
+/* Анимации блока "item-animation pulse" */
+
+.pulse .item-animation__showing {
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 25px;
+}
+.pulse-effect {
+  background-color: #905ed0a1;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  position: relative;
+  /* margin: auto; */
+}
+.circle {
+  position: absolute;
+  background-color: inherit;
+  height: 100%;
+  width: 100%;
+  border-radius: 100%;
+  opacity: 0.5;
+  animation: pulse 1.5s ease-out infinite;
+  transition: all 1.5s ease-out 0s;
+}
+.circle:nth-of-type(1) {
+  animation-delay: -0.5s;
+}
+.circle:nth-of-type(2) {
+  animation-delay: -1s;
+}
+.circle:nth-of-type(3) {
+  animation-delay: -1.5s;
+}
+
+/* Кнопка */
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 1.25rem 1.7rem;
+  background-color: rgba(69, 67, 178, 0.5);
+  border-radius: 15px;
+  border: none;
+  outline: none;
+
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #fff;
+
+  position: relative;
+}
+.button::before,
+.button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: 15px;
+
+  animation: pulse-l 1.5s ease-out infinite;
+}
+.button::after {
+  animation-delay: 0.7s;
+}
+
+.button span {
+  z-index: 2;
+}
+/*==============================*/

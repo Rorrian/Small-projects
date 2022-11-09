@@ -11,6 +11,7 @@
 10. text-focus-in(opacity и blur)
 11. vanish-in(scale и blur)
 12. tin-down-left(scale и translate left to right)
+13. pulse(scale, opacity)
 */
 
 /* ----- opacity ----- */
@@ -621,6 +622,32 @@
     opacity: 1;
     -webkit-transform: scale(1, 1) translate(0, 0);
     transform: scale(1, 1) translate(0, 0);
+  }
+}
+/* ----- pulse ----- */
+@-webkit-keyframes pulse {
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+@keyframes pulse {
+  100% {
+    transform: scale(1.75);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes pulse-l {
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
+  }
+}
+@keyframes pulse-l {
+  100% {
+    transform: scale(1.25);
+    opacity: 0;
   }
 }
 /*==============================*/
