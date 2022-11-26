@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>Digital counter animation</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="page">
+        <section class="page__section">
+          <div class="page__container">
+            <h1 class="page__title">
+              1. Анимация цифрового счетчика при загрузке страницы
+            </h1>
+            <div class="page__row">
+              <!-- ! Атрибут определяет длительность(скорость) анимации.
+								Чтобы все счетчики на странице единовременно пришли к установленному конечному значению,
+								нужно указать одинаковые значения. По умолчанию = 1000
+							-->
+              <!-- Число внутри блока определяет конечное значение для счетчика. Начальное = 0-->
+              <div data-digits-counter class="page__counter">100</div>
+              <div data-digits-counter class="page__counter">500</div>
+              <div data-digits-counter class="page__counter">-10</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="page__section">
+          <div class="page__container">
+            <h1 class="page__title">
+              2. Анимация цифрового счетчика при скролле страницы
+            </h1>
+            <div class="page__row">
+              <div data-digits-counter class="page__counter">800</div>
+              <div data-digits-counter class="page__counter">950</div>
+              <div data-digits-counter class="page__counter">150</div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="js/app.js" defer></script>
+  </body>
+</html>
