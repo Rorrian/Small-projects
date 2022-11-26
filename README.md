@@ -6,4 +6,4 @@
 - Полноэкранный слайдер на Jquery с разделением фонового изображения напополам при прокрутке и слайдер для смены заголовка
 
 Deployment:  
-https://rorrian.github.io/Small-elements/
+https://rorrian.github.io/Small-projects/
