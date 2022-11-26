@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+
+    <title>Text typing animation</title>
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+
+  <body>
+    <h1 class="title">Text typing animation... with Typed.js</h1>
+
+    <!-- Общий контейнер для вывода -->
+    <div class="text-typing">
+      <!-- Блок для печати строк -->
+      <div id="typed"></div>
+    </div>
+
+    <!-- Список строк для печати -->
+    <div id="typed-strings">
+      <span>Яблоки</span>
+      <span>Апельсины</span>
+      <span>Груши</span>
+      <span>Бананы</span>
+      <span>Киви</span>
+      <span>Мандарины</span>
+      <span>Грейпфрукты</span>
+      <span>Хурма</span>
+      <span>Персики</span>
+      <span>Абрикосы</span>
+    </div>
+
+    <!-- ! Подключение библиотеки Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Наш код с настройками для работы библиотеки Typed.js -->
+    <script src="js/app.js" defer></script>
+  </body>
+</html>

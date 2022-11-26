@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.title {
+  text-align: center;
+  margin-top: 60px;
+}
+
+/* ! Необходимо сделать элемент инлайновым, чтобы курсор не переходил на следующую строку */
+#typed {
+  display: inline;
+}
+
+.text-typing {
+  text-align: center;
+  font-size: 28px;
+  margin-top: 50px;
+}
